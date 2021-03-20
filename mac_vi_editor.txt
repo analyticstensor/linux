@@ -1,0 +1,36 @@
+# vi mode
+esc	command mode. used to navigate, search, perform command.
+i	insert mode. used to enter text.
+
+# vim line navigation in command mode. 
+vi command	Description
+0|^	move to beginning of the current line
+$	move to end of line
+H	move to the top of the current window (high)
+M	move to the middle of the current window (middle)
+L	move to the bottom line of the current window (low)
+1G	move to the first line of the file
+20G	move to the 20th line of the file
+G	move to the last line of the file
+up|down arrow	up and down arrow key is use to move line up and down
+linenumber[up|down] arrow	line number followed by up or down arrow is used to move line up and down for given line
+
+# vim edit file in command mode.
+i	change to insert mode (before cursor)
+a	change to insert mode (after cursor)
+A	change to insert mode (at end of line)
+r	replace one character
+R	overwrite text
+x	delete one character
+dd	delete one line
+yy	yank line (copy)
+p	paste deleted or yanked text after cursor
+P	paste deleted or yanked text before cursor
+G	go to end of the file
+1G	go to top of the file
+J	merge next line with this one
+/	search, follow / with text to find
+:wq	write file and quit
+:q!	quit without saving
+:%s/old/new/g	substitute; replace "old" with "new" on all lines
+:g/pattern/d	delete all lines that match the pattern
